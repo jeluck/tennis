@@ -1,0 +1,211 @@
+/**
+ * @page 注册
+*/
+
+
+/*注册*/
+
+.lz-reg {
+  padding: 0.3rem 0.2rem;
+}
+
+.lz-reg>* {
+  overflow: hidden;
+}
+
+.lz-reg .lz-default {
+  position: relative;
+  height: 0.48rem;
+  margin-bottom: 0.1rem;
+}
+
+.lz-reg .lz-default i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 0.4rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  text-align: center;
+  font-size: 0.25rem;
+  color: #aaa;
+}
+
+.lz-reg .lz-default input {
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0.1rem 0.4rem;
+  border: 0.01rem solid #E3E3E3;
+  border-radius: 0.05rem;
+  font-size: 0.14rem;
+}
+
+.lz-reg .lz-default .lz-code {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  width: 1rem;
+  height: 100%;
+  border-radius: 0 0.05rem 0.05rem 0;
+  line-height: 0.48rem;
+  text-align: center;
+  color: #fff;
+  background: #B3B3B3;
+}
+
+
+/*获取验证码*/
+
+.lz-reg .lz-default .lz-password-cutover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0.5rem;
+  z-index: 9;
+}
+
+
+/*密码切换，是否明文可见*/
+
+.lz-reg .lz-default.lz-btn {
+  margin: 0.3rem 0 0.2rem 0;
+}
+
+
+/*注册按钮*/
+
+.lz-reg .lz-default.lz-btn input {
+  font-size: 0.18rem !important;
+  color: #fff;
+}
+
+.lz-reg .lz-default.lz-checkbox {
+  font-size: 0.15rem;
+  color: #B6B6B6;
+  font-weight: bold;
+}
+
+
+/*同意用户协议*/
+
+.lz-reg .lz-default.lz-checkbox input {
+  display: none;
+}
+
+.lz-reg .lz-default.lz-checkbox span {
+  position: relative;
+  display: inline-block;
+  width: 0.16rem;
+  height: 0.16rem;
+  border: 0.01rem solid #ccc;
+  vertical-align: text-bottom;
+  border-radius: 0.02rem;
+}
+
+.lz-reg .lz-default.lz-checkbox span i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 0.16rem;
+  font-size: 0.16rem;
+}
+
+
+/* head logo */
+
+.lz-version {
+  padding-top: 0.2rem;
+}
+
+.lz-version + .lz-reg {
+  padding: 0.2rem;
+}
+
+.lz-version img {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0 auto;
+}
+
+.lz-version h3 {
+  padding-top: 0.1rem;
+  text-align: center;
+  font-size: 0.16rem;
+}
+
+.lz-version p {
+  text-align: center;
+  font-size: 0.16rem;
+  color: #666;
+}
+
+
+/* 快速登录  */
+
+.lz-other-login {
+  padding: 0.4rem 0;
+}
+
+.lz-other-login h4 {
+  position: relative;
+  height: 38px;
+  line-height: 38px;
+  font-size: 0.16rem;
+  text-align: center;
+}
+
+.lz-other-login span {
+  position: relative;
+  z-index: 10;
+  padding: 0 0.15rem;
+  background: #EFEFEF;
+}
+
+.lz-other-login h4:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 0.01rem;
+  background: #ccc;
+}
+
+.lz-other-login .lz-btn {
+  width: 2.5rem;
+  margin: 0 auto;
+}
+
+.lz-other-login .lz-table-cell {
+  text-align: center;
+}
+
+.lz-other-login .lz-table-cell i {
+  font-size: 0.4rem;
+}
+
+.lz-other-login .lz-table-cell i.lz-icon-yuan-weixin {
+  color: #45C01A;
+}
+
+.lz-other-login .lz-table-cell i.lz-icon-yuan-qq {
+  color: #32A5E6;
+}
+
+.lz-other-login .lz-table-cell i.lz-icon-yuan-weibo {
+  color: #FF9001;
+}

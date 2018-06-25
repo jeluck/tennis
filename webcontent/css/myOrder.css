@@ -1,0 +1,3 @@
+.lz-myorder{ overflow: initial; position:relative;}
+.lz-myorder .lz-icon-jiantou.lz-show{ display:inline-block; padding:0 0.05rem 0 0; transform:rotate(180deg); -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg);}
+.lz-myorder-type{ display:none; position:absolute; top:0.52rem; right:0; bottom:0; left:0; z-index:999;}

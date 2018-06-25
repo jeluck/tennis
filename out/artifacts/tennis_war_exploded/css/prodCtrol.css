@@ -1,0 +1,63 @@
+/* yihezhai样式*/
+/* 珠宝客户端首页样式  */
+.index {
+    margin: 60px 5%;
+    color: #fff;
+}
+.leftDiv {
+    background-color: #238822;
+    height: 300px;
+    float: left;
+    width: 48%;
+    text-align: center;
+    position:relative;
+    border-radius: 3px;
+}
+.rightDiv {
+    background-color:#238822;
+    height:300px;
+    float: left;
+    width: 48%;
+    margin-left: 4%;
+    text-align: center;
+    position:relative;
+    border-radius: 3px;
+    /*   color: #fff;*/
+}
+img.indexImg {
+    width: 100%;
+}
+.bottomDiv {
+    background-image:url("../images/indexImg.png");
+}
+span.leftImg {
+    background: url("../images/total.png");
+    background-size: 600px;
+    background-position: -452px 80%;
+    height: 60px;
+    width: 60px;
+    display: block;
+    position: absolute;
+    top: 70px;
+    margin-left: 30%;
+}
+span.rightImg {
+    background: url("../images/total.png");
+    background-size: 600px;
+    background-position: -508px 80%;
+    height: 60px;
+    width: 60px;
+    display: block;
+    position: absolute;
+    top: 70px;
+    margin-left:30%;
+}
+.bottomImg {
+    width:100%;
+    margin-top: -240px;
+}
+span.indexText {
+    position: relative;
+    top: 100px;
+    font-size: 16px;
+}

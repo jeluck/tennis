@@ -1,0 +1,636 @@
+/* yihezhai样式*/
+/******************************************/
+/* 珠宝分销商东莞商家样式 dongguan-sale  */
+/******************************************/
+
+/* 个人资料 */
+.inform.photo {
+    height: 35px;
+    padding: 10% 4%;
+}
+.inform {
+    padding-left: 4%;
+    background-color: white;
+    margin-top: 12px;
+    height: 35px;
+    padding: 4%;
+    font-size: 16px;
+}
+.photo-img {
+    margin-left: -40px;
+    width: 70px;
+    vertical-align: top;
+    margin-top: -7px;
+    height: 70px;
+}
+span.inform-text {
+    float: left;
+    position: relative;
+    display: block;
+    top: -36px;
+    left: 50px;
+    color: #595959;
+}
+span.arrowRig-text {
+    /* background: url("../images/total.png"); */
+    /* background-size: 680px; */
+    /* background-position: -152px -90%; */
+    height: 45px;
+   /* width: 44px;*/
+    display: block;
+    float: right;
+    position: relative;
+    top:-36px;
+    right: 3%;
+    color: #595959;
+}
+.inform-img00,.inform-img01,.inform-img02,.inform-img03,.inform-img04 {
+    background: url("../images/total.png");
+    background-size: 650px;
+    height: 42px;
+    width: 50px;
+    margin-left: -5px;
+    display: block;
+}
+.inform-img00 {
+    background-position: -293px -87%;
+    width: 44px;
+}
+.inform-img01 {
+    background-position: -332px -87%;
+}
+span.inform-img02 {
+    background-position: -373px -87%;
+    width: 44px;
+}
+span.inform-img03 {
+    background-position: -406px -87%;
+    width: 44px;
+}
+span.inform-img04 {
+    background-position: -440px -87%;
+    /* width: 44px; */
+}
+/** 我的账户样式 **/
+
+/* 用户信息样式 */
+.user {
+    text-align: center;
+    background-color: #22891F;
+    padding-top: 30px;
+}
+a.userName {
+    color: #fff;
+    display: inline-block;
+    margin-top: -8px;
+    vertical-align: top;
+}
+a.userFrom {
+    color: #FFA7A8;
+    display: inline-block;
+    margin-top: -15px;
+    vertical-align: top;
+}
+.mySet.myPocket {
+    margin-left: -48px;
+    height:50px;
+    margin-top: 2px;
+    padding-top: 10%;
+}
+a.arrowRight {
+    position: absolute;
+    right: 8%;
+    font-size: 13px;
+}
+a.nowPocket {
+    font-size: 30px;
+    color: #EF3B3E;
+}
+.mySet {
+    background-color: white;
+    margin-top: 20px;
+    height: 35px;
+    padding: 4%;
+    margin-bottom: -10px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+/*span.wechat-text {
+    float: left;
+    position: relative;
+    display: block;
+     top: 0px;
+    left: 50px;
+    font-size: 16px;
+    color: #595959;
+}*/
+span.arrowRig-img {
+    background: url("../images/total.png");
+    background-size: 680px;
+    background-position: -152px -90%;
+    height: 45px;
+    width: 44px;
+    margin-left: -5px;
+    display: block;
+    float: right;
+    position: relative;
+    /* top: -52px; */
+    right: -2%;
+}
+.Count-img00,.Count-img01,.Count-img02 {
+    background: url("../images/total.png");
+    background-size: 650px;
+    /* background-position: -14px -90%; */
+    height: 42px;
+    width: 50px;
+    margin-left: -5px;
+    display: block;
+}
+.Count-img01,.Count-img02 {
+    background-position: -350px -76%;
+    width: 33px;
+}
+span.Count-text {
+    float: left;
+    position: relative;
+    display: block;
+    top: -42px;
+    left: 50px;
+    font-size: 16px;
+    color: #595959;
+    width: 76%;
+}
+.produceSet-img01 {
+    background: url("../images/total.png");
+    background-size: 650px;
+    background-position:-483px -86%;
+    width: 33px;
+    height: 42px;
+    /*    width: 50px;*/
+    margin-left: -5px;
+    display: block;
+}
+.daily-img02 {
+    background: url("../images/total.png");
+    background-size: 650px;
+    background-position: -525px -86%;
+    width: 33px;
+    height: 42px;
+/*    width: 50px;*/
+    margin-left: -5px;
+    display: block;
+}
+.total-img02 {
+    background: url("../images/total.png");
+    background-size: 650px;
+    background-position:-568px -86%;
+    width: 33px;
+    height: 42px;
+ /*   width: 50px;*/
+    margin-left: -5px;
+    display: block;
+}
+.pocket-img01,.team-img01 {
+    background: url("../images/total.png");
+    background-size: 650px;
+    height: 48px;
+    width: 42px;
+    margin-left: 42px;
+    display: block;
+    margin-top: -15px;
+
+}
+.pocket-img01 {
+    background-position: -473px -110%;
+
+}
+.team-img01 {
+    background-position:-515px -110%;
+
+}
+
+/* 账户明细 */
+.countTitle {
+    padding: 5%;
+    background-color: #22891F;
+    color: #fff;
+    height: 70px;
+   /* margin-top: 45px;*/
+}
+span.getCUser-img {
+    float: right;
+}
+span.money {
+    font-size: 30px;
+}
+.redtext {
+    color:#EB5153;
+}
+em.redtext {
+    padding-left: 15%;
+}
+span.pro-state {
+    padding: 0 4%;
+    font-size: 18px;
+    color: #7D7D7D;
+    display: block;
+    line-height: 30px;
+    margin-bottom: -30px;
+}
+.redText {
+    color:#EB5153;
+    font-size: 20px;
+}
+em.redtext {
+    padding-left: 15%;
+}
+.gray {
+    color: #868686;
+}
+#CountTab li {
+    float: left;
+    width: 50%;
+   /* border-left: 1px solid #22891F;*/
+    text-align: center;
+}
+ul#CountTab {
+    border: 2px solid #22891F;
+    height: 32px;
+    border-radius: 4px;
+    border-left-width: 1px;
+}
+li.count-li {
+     border-top: 1px solid #ebebeb;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    position: relative;
+  }
+img.count-order-list-img {
+    width: 60px;
+    float: left;
+    margin-top: 22px;
+    height: 60px;
+}
+span.count-orderDetail {
+    float: left;
+    line-height: 20px;
+    margin: 5%;
+    margin-top: 7%;
+   /* width: 210px;*/
+    /* 其他界面有冲突  */
+    width: 70%;
+}
+span.countMoney {
+    float: right;
+    line-height: 20px;
+    position: absolute;
+    top: 22px;
+    right: 6px;
+}
+.countTime {
+    color:#D2D2D2;
+}
+
+
+
+/* 提现账户getPay样式 */
+.getPay {
+    padding-left: 4%;
+    background-color: white;
+    margin-top: 12px;
+    height: 60px;
+    padding: 4%;
+}
+.getPay-img01,.getPay-img02 {
+    background: url("../images/total.png");
+    background-size: 650px;
+    height: 42px;
+    width: 50px;
+    margin-left: 0px;
+    display: block;
+}
+span.getPay-img01 {
+    background-position: -115px -62%;
+    width: 65px;
+    height: 65px;
+}
+span.getPay-img02 {
+    background-position: -186px -62%;
+    width: 65px;
+    height: 65px;
+}
+span.getPay-text {
+    float: left;
+    position: relative;
+    display: block;
+    top: -55px;
+    left: 70px;
+    color: #595959;
+    line-height: 22px;
+}
+.whatGetPUser {
+    float: right;
+    margin-right: -25px;
+    color: #A8A8A8;
+    border-bottom: 1px solid #A8A8A8;
+    margin-top: 10px;
+}
+
+
+/* 我的银行卡样式 */
+.NameCard {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    margin: 6%;
+}
+input.noborder {
+    border: none;
+    width: 96%;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 10px;
+}
+select.bankSelected {
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 10px;
+    color: #A9A9A9;
+}
+input.CardButton,input.SetdButton {
+    width: 88%;
+    margin-left: 5%;
+    background-color:#22891F;
+    height: 45px;
+    border-width: 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 3px;
+    -webkit-appearance: none;
+}
+.warning {
+    padding-left: 4%;
+    font-size: 12px;
+    color: #888;
+    line-height: 25px;
+    margin-top: 12px;
+}
+
+/* 设置样式set */
+li.set-li {
+    border-bottom: 1px solid #ebebeb;
+    margin: 2% 4%;
+    position: relative;
+    height: 50px;
+    font-size: 16px;
+}
+span.set-text {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.set-img01,.set-img02,.set-img03,.set-img04,.set-img05 {
+    background: url("../images/total.png");
+    background-size: 650px;
+    /* background-position: -14px -90%; */
+    height: 42px;
+    margin-left: -5px;
+    display: block;
+    width: 33px;
+    float: left;
+    margin-right: 20px;
+}
+.set-img01 {
+    background-position:-250px -60%;
+}
+.set-img02 {
+    background-position:-285px -60%;
+}
+.set-img03 {
+    background-position: -320px -60%;
+}
+.set-img04 {
+    background-position: -355px -60%;
+}
+.set-img05 {
+    background-position:-391px -60%;
+}
+a.version {
+    position: absolute;
+    right: 10px;
+}
+/* 添加商品-我的商品 myProduces */
+/*.Produce {
+    padding: 4%;
+}*/
+ul#ProduceTab {
+    background-color: #fff;
+    height: 38px;
+    border-bottom: 1px solid #ebebeb;
+    padding-top: 10px;
+}
+#ProduceTab li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: #fff;
+    height: 35px;
+}
+li.ssdown {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.ssdown-img01,.ssdown-img02,.ssdown-img03,.edit-img01,.add-img02,.delete-img03 {
+    background: url("../images/total.png");
+    background-size: 600px;
+    background-position: -390px -58%;
+    height: 38px;
+    margin-left: 15%;
+    display: block;
+    width: 38px;
+    float: left;
+    /*margin-right: -20px;*/
+}
+span.ssdown-img01 {
+     background-position: -390px -58%;
+ }
+.ssdown-img02 {
+    background-position: -427px -58%;
+    margin-left: 20%;
+    border: none;
+}
+.ssdown-img03 {
+    background-position: -458px -58%;
+}
+.edit-img01 {
+    background-position: -313px -31.5%;
+}
+.add-img02 {
+    background-position: -384px -32%;
+    width: 35px;
+}
+.delete-img03 {
+    background-position: -350px -31.5%;
+}
+
+li.Prod-Content-li {
+    margin-top: 12px;
+    background-color: #fff;
+    padding: 10% 0;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-left: 4%;
+    width: 96%;
+}
+.prod-ssdown {
+    background-color: #fff;
+    border-top: 1px solid #ebebeb;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.backSpace {
+    margin-right: 12%;
+}
+div.maxAddProd {
+    background: url("../images/total.png");
+    background-size: 600px;
+    background-position: -510px -60%;
+    height: 53px;
+    margin-left: 4%;
+    display: block;
+    width: 51px;
+    float: left;
+    position: fixed;
+    bottom: 0;
+}
+
+/*  添加商品详细列表  */
+.produce-images {
+    background-color: #fff;
+    width: 92%;
+    padding: 4%;
+ /*   height: 115px;*/
+}
+.prod-add-img {
+    background: url("../images/total.png");
+    background-size: 600px;
+    background-position: -390px -58%;
+    height: 38px;
+    margin-left: 15%;
+    display: block;
+    width: 38px;
+    float: left;
+    /*margin-right: -20px;*/
+}
+.prod-add-img {
+    background-position: -18px -36%;
+}
+.prod-add-img {
+    background-position: -18px -41%;
+    width: 85px;
+    height: 82px;
+    border: none;
+    margin-left: -2px;
+    margin: 10px auto;
+}
+.produce-sum {
+    padding: 4%;
+    background-color: #fff;
+    margin: 10px auto;
+}
+.textGray {
+    margin-left: 10%;
+    color: #A9A9A9;
+}
+#address {
+    width: 92%;
+    line-height: 25px;
+    color: #A9A9A9;
+    border: medium none;
+    padding: 4% 4% 4% 8%;
+    margin: -6px auto 15px;
+}
+textarea.produce-title.border-none {
+    width: 100%;
+    min-height: 0;
+}
+textarea.produce-contents.border-none {
+    width: 100%;
+    min-height: 0;
+}
+.border-none {
+    border: none;
+}
+div#Model {
+   /* border: 1px solid #ebebeb;*/
+    padding: 10px 2%;
+    width: 100%;
+    position:relative;
+    margin-bottom: 16px;
+  /*  vertical-align: top;*/
+}
+.adddivModel {
+    padding: 10px;
+    position: relative;
+    width: 90%;
+}
+input.height.border-none {
+    width: 20%;
+    padding-left: 10px;
+    text-align: center;
+}
+
+input.modelGray.border-none {
+    margin-left: 15px;
+    width: 40%;
+    text-align: center;
+}
+.model-border {
+    border: 1px solid #ebebeb;
+    margin: 15px 30px -16px  -11px;
+    padding: 6px 5%;;
+    vertical-align: top;
+    padding-bottom:-4px;
+}
+div#AddModel {
+    margin-top: 15px;
+}
+span.model-block {
+    background: url("../images/total.png");
+    background-size: 630px;
+    background-position: -150px -31%;
+    height: 38px;
+   /* margin-left: 15%;*/
+    display: block;
+    width: 38px;
+    float: left;
+    /*margin-right: -20px;*/
+}
+.close-model {
+    background: url("../images/total.png");
+    background-size: 630px;
+    background-position: -115px -31%;
+    height: 38px;
+    /* margin-left: 15%;*/
+    display: block;
+    width: 38px;
+    float: left;
+    position: absolute;
+    right: 0;
+    top: 76px;
+}
+.setPay.produce-sum {
+    position: relative;
+}
+span.doubt {
+    background: url("../images/total.png");
+    background-size: 600px;
+    background-position: -180px -32%;
+    height: 37px;
+    width: 38px;
+    position: absolute;
+    right: 5%;
+    top:7px;
+}

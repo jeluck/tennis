@@ -1,0 +1,60 @@
+/**
+ * @page 账号充值
+*/
+
+.lz-balance { padding: 0.3rem 0; background: #E7CA27;}
+.lz-balance .lz-center{ width: 1.5rem; margin: 0 auto;}
+.lz-balance .lz-center > span{ display: table-cell; vertical-align: middle;}
+.lz-balance .lz-center .lz-icon-qiandai{ font-size: 0.4rem; color: #EEDA68;}
+.lz-balance .lz-center .lz-box{ color: #F4F4F4;}
+.lz-balance .lz-center strong{ color: #fff;}
+
+/* 我的账户收入清单 */
+.lz-account { text-align: center;}
+.lz-account h3 { overflow: hidden; height: 0.28rem; padding: 0.05rem 0; font-size: 0.13rem; line-height: 0.28rem; font-weight: normal;   background: #FFF9DA;}
+.lz-account p { padding:  0.1rem; line-height: 0.24rem; font-size: 0.13rem; border-bottom: 0.01rem solid #ddd; background: #fff;}
+
+.lz-log-info li{ margin: 0; padding: 0.05rem 0.1rem;}
+
+
+.lz-log-list { width: 100%; text-align: left; text-indent: 0.05rem;}
+.lz-log-list .lz-tit{ line-height: 0.28rem; background: #FFF9DA;}
+.lz-log-list .lz-tit th{ padding: 0.05rem 0; font-size: 0.13rem; font-weight: normal; text-align: center;}
+.lz-log-list .lz-list td{ padding: 0.1rem 0; font-size: 0.13rem; font-weight: normal; text-align: center; background: #fff;}
+
+/*
+    申请vip
+*/
+.sq-vip {
+    padding: 0.2rem 0;
+    background: #fff;
+}
+.sq-vip-pic {
+    position: relative;
+}
+.sq-vip-img {
+    width: 100%;
+}
+.sq-vip-dan {
+    position: absolute;
+    right: 0%;
+    bottom: 6%;
+    z-index: 99;
+    width: 23%;
+    font-size: 14px;
+    color: #B1B1B1;
+    text-shadow: 1px 1px 0px #B18432;
+}
+.sq-vip-info {
+    padding: 0.1rem 0.1rem 0 0.1rem;
+}
+.sq-vip-ruhui {
+    font-size: 14px;
+    color: #333;
+}
+.sq-vip-money {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ED4332;
+}

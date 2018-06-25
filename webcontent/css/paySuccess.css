@@ -1,0 +1,53 @@
+/**
+ * corporation：yihezhai
+ * the css of paySuccess.html
+ * author: lyj
+ * date  : 2015-09-24
+ *
+ */
+body {
+    background-color: #ebebeb;
+}
+.paySuccess {
+    text-align: center;
+    color: #22891F;
+    font-size: 18px;
+    padding: 50px;
+    background-color:#fff;
+}
+.paySuccess-img {
+    background: url("../images/total.png");
+    background-size: 680px;
+    background-position: -190px 99%;
+    height: 82px;
+    width: 82px;
+    display: inline-block;
+}
+.payCG {
+    background-color: #fff;
+    margin-top: 1px;
+    height: 85px;
+    text-align:center;
+    color: #666;
+}
+span.payCheck {
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    display: inline-block;
+    width: 35%;
+    margin: 25px 0;
+    margin-right: 10px;
+}
+span.payGoOn {
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    width: 35%;
+    display: inline-block;
+    margin-left: 10px;
+}
+/* 订单支付失败  */
+img.payFail {
+    width: 50%;
+}

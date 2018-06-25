@@ -1,0 +1,269 @@
+/**
+ * @page 预定支付
+*/
+
+
+/* 预定支付 page */
+
+.lz-zhifu-list {
+  padding: 0 0.1rem 0 0.1rem;
+}
+
+.lz-zhifu-list .tit {
+  border-bottom: 0.01rem solid #EBEBEB;
+  line-height: 0.38rem;
+  font-size: 0.14rem;
+  color: #555;
+}
+
+.lz-zhifu-list .con {
+  border-bottom: 0.01rem solid #EBEBEB;
+  line-height: 0.38rem;
+}
+
+.lz-zhifu-list .lz-goods {
+  padding-top: 0.1rem;
+}
+
+.lz-zhifu-list .lz-iconfont {
+  display: inline-block;
+  width: 0.3rem;
+  text-align: center;
+}
+
+.lz-zhifu-list .lz-count {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  height: 0.38rem;
+  padding: 0 !important;
+  margin-top: -0.19rem;
+  line-height: 0.38rem;
+  color: #317BD9;
+}
+
+
+/* 选择的时间 */
+
+.lz-goods .lz-time .lz-date-box,
+.lz-goods .lz-time .lz-hour-box,
+.lz-goods .lz-coach {
+  overflow: hidden;
+  position: relative;
+}
+
+.lz-goods .lz-time .lz-date-box>* {
+  display: inline-table;
+  vertical-align: middle;
+}
+
+.lz-goods .lz-time .lz-date-box {
+  padding-right: 0.8rem;
+}
+
+.lz-goods .lz-time .lz-date-box .lz-date {
+  margin-bottom: 0.1rem;
+}
+
+.lz-goods .lz-time .lz-date-box .lz-date>span {
+  display: inline-block;
+  padding: 0.1rem 0.2rem;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  background: #FFF4F1;
+  color: #333;
+}
+
+.lz-goods .lz-time .lz-hour-box {
+  padding: 0 0.5rem 0 0.3rem;
+}
+
+.lz-goods .lz-time .lz-hour-box .lz-hour-list {
+  line-height: 0.28rem;
+  border-bottom: 0.01rem solid #EBEBEB;
+}
+
+
+/* 选择的教练 */
+
+.lz-goods .lz-coach {
+  padding: 0.1rem 0;
+}
+
+.lz-goods .lz-coach .lz-headimg {
+  width: 0.6rem;
+  height: 0.6rem;
+  padding-right: 0.05rem;
+  vertical-align: middle;
+}
+
+.lz-goods .lz-coach .lz-name {
+  font-size: 0.16rem;
+  color: #555;
+}
+
+
+/* 使用优惠卷 */
+
+.lz-goods .lz-coupon {
+  overflow: hidden;
+  padding: 0.1rem 0;
+}
+
+.lz-goods .lz-coupon span {
+  float: right;
+  margin-top: 0.04rem;
+}
+
+
+/* 合计 */
+
+.lz-goods .lz-total {
+  padding: 0.1rem 0;
+  text-align: right;
+  font-weight: bold;
+}
+
+.lz-goods .lz-total .lz-money {
+  color: #FE0000;
+}
+
+
+/* 支付方式 */
+
+.lz-zhifuway {
+  background: #fff;
+}
+
+.lz-zhifuway-tit {
+  padding: 0 0.1rem;
+  border-bottom: 0.01rem solid #EBEBEB;
+  line-height: 0.48rem;
+  font-size: 0.16rem;
+  font-weight: 500;
+  color: #777;
+}
+
+.lz-zhifuway-list {
+  overflow: hidden;
+}
+
+.lz-zhifuway-list-li {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0.1rem 0 0.5rem;
+  border-bottom: 0.01rem solid #EBEBEB;
+  line-height: 0.48rem;
+}
+
+.lz-zhifuway-list-li:last-of-type {
+  border: none;
+}
+
+.lz-zhifuway-list-li>i {
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.48rem;
+  height: 0.48rem;
+  text-align: center;
+  font-size: 0.28rem;
+}
+
+.lz-zhifuway-list-li>i.lz-icon-qiandai {
+  color: #32A5E6;
+}
+
+.lz-zhifuway-list-li>i.lz-icon-zhifubao {
+  color: #FF9001;
+}
+
+.lz-zhifuway-list-li>i.lz-icon-weixin {
+    color:#44b549;
+}
+.lz-zhifuway .lz-btn {
+  background: #FF3A26;
+  color: #fff;
+}
+
+
+/* 我的订单，预定详情 */
+
+.lz-dduser-box {
+  overflow: hidden;
+}
+
+.lz-dduser-box li {
+  position: relative;
+  padding: 0.1rem;
+}
+
+.lz-dduser-box li + li {
+  border-top: 0.01rem solid #ddd;
+}
+
+.lz-dduser-box li img {
+  overflow: hidden;
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-right: 0.1rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.lz-dduser-box li .lz-call {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding-right: 10px;
+  line-height: 0.8rem;
+  color: #222;
+}
+
+.lz-dduser-box li .lz-call .lz-icon-bohao {
+  padding-right: 0.03rem;
+  color: #ED4332;
+}
+
+.lz-dduser-box li .lz-icon-renzheng {
+  position: absolute;
+  top: 0.05rem;
+  left: 0.56rem;
+  color: #59DA6B;
+}
+
+.lz-dduser-box li .lz-sex {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  border: 0.01rem solid #ccc;
+  text-align: center;
+  line-height: 0.2rem;
+  background: #fff;
+}
+
+.lz-zhifu-list-plus {
+  padding: 0;
+}
+.lz-zhifu-list-plus  .lz-time {
+  border-top: 0.01rem solid #EBEBEB; border-bottom: 0.01rem solid #EBEBEB;
+}
+.lz-zhifu-list-plus .lz-count {
+  right: 0.1rem;
+}
+.lz-zhifu-list-plus .lz-total {
+  padding-right: 0.1rem;
+}
+.lz-zhifu-list-plus .lz-tit-3 {
+  border: none;
+}

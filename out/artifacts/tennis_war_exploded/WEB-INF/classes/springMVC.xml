@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc.xsd 
+	http://www.springframework.org/schema/task
+	http://www.springframework.org/schema/task/spring-task-3.0.xsd
+	http://www.springframework.org/schema/jdbc
+	http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+	http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<mvc:annotation-driven />
+
+	<mvc:resources mapping="/js/**" location="/js/"
+		cache-period="1000" />
+	<mvc:resources mapping="/css/**" location="/css/"
+		cache-period="1000" />
+	<mvc:resources mapping="/assets/**" location="/assets/"
+		cache-period="1000" />
+	<!--<mvc:resources mapping="/data/**" location="/data/"-->
+		<!--cache-period="1000" />-->
+	<!--<mvc:resources mapping="/liantiao/**" location="/liantiao/"-->
+		<!--cache-period="1000" />-->
+	<context:annotation-config />
+
+	<context:component-scan base-package="com.project" />
+	
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+<!-- 		<property name="url" value="jdbc:mysql://192.168.1.220:3306/tennis?characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;maxReconnects=10  " /> -->
+<!-- 		<property name="username" value="root" /> -->
+<!-- 		<property name="password" value="yhz2014" /> -->
+<!-- 		<property name="url" value="jdbc:mysql://192.168.1.101:3306/tennis?characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;maxReconnects=10  " /> -->
+<!-- 		<property name="url" value="jdbc:mysql://119.147.71.140:3306/tennis?characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;maxReconnects=10  " /> -->
+<!-- 		<property name="username" value="root" /> -->
+<!-- 		<property name="password" value="rootrootroot" /> -->
+		<property name="url" value="jdbc:mysql://localhost:3306/tennis?characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;maxReconnects=10  " />
+		<property name="username" value="root" />
+		<property name="password" value="123456" />
+
+<!-- 			<property name="url" value="jdbc:mysql://119.147.71.141:3306/tennis?characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;maxReconnects=10  " /> -->
+<!-- 			<property name="username" value="root" /> -->
+<!-- 			<property name="password" value="yihezhairoot2016" /> -->
+		<!-- initialSize: 初始化连接 -->
+		<property name="initialSize" value="10" />
+		<!-- maxIdle: 最大空闲连接 -->
+		<property name="maxIdle" value="50" />
+		<!-- minIdle: 最小空闲连接 -->
+		<property name="minIdle" value="20" />
+		<!-- maxActive: 最大连接数量 -->
+		<property name="maxActive" value="50" />
+		<property name="testWhileIdle"><value>true</value></property> 
+		<!-- 打开检查,用异步线程evict进行检查 -->  
+	    <property name="testOnBorrow"><value>false</value></property>  
+	    <property name="testOnReturn"><value>false</value></property>  
+	    <property name="validationQuery"><value>select 1</value></property>  
+	    <property name="validationQueryTimeout"><value>1</value></property>  
+	    <property name="timeBetweenEvictionRunsMillis"><value>10000</value></property>  
+	    <property name="numTestsPerEvictionRun"><value>200</value></property> 
+		
+		<!-- removeAbandoned: 是否自动回收超时连接 -->
+		<property name="removeAbandoned" value="true" />
+		<!-- removeAbandonedTimeout: 超时时间(以秒数为单位) -->
+		<property name="removeAbandonedTimeout" value="180" />
+		<!-- maxWait: 超时等待时间以毫秒为单位 6000毫秒/1000等于6秒 -->
+		<property name="maxWait" value="15000" /> 
+	</bean>
+	
+	
+	<!-- Hibernate配置 -->
+	<bean id="sessionFactory"  name="sessionFactory"  class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean" >
+		<property name="dataSource" ref="dataSource" />
+		<property name="namingStrategy">
+			<bean class="org.hibernate.cfg.ImprovedNamingStrategy" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>   
+				<prop key="hibernate.show_sql">false</prop>  
+<!-- 				<prop key="hibernate.format_sql">true</prop>   -->
+                <prop key="hibernate.hbm2ddl.auto">update</prop>  
+				<prop key="hibernate.cache.use_second_level_cache">true</prop>
+				<prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop>
+				<prop key="hibernate.cache.use_query_cache">true</prop>
+				<!-- 配置 hibernate boolean型与 数据库 char(1) 的映射 -->
+				<prop key="query.substitutions">true 1,false 0</prop>
+				<!-- 最优化二级缓存 -->
+				<prop key="hibernate.cache.use_structured_entries">true</prop>
+			</props>
+		</property>
+		<!-- 通过注解扫描包的方式 -->
+		<property name="packagesToScan">
+			<list>
+				<value>com.project.pojo</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<!-- 定义事务传播属性 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="query*" propagation="NOT_SUPPORTED" read-only="true" />
+			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="delete*" propagation="REQUIRED" />
+			<tx:method name="insert*" propagation="REQUIRED" />
+			<tx:method name="invest*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+	
+	<aop:aspectj-autoproxy proxy-target-class="true"  /> 
+
+
+	<aop:config>
+		<aop:pointcut id="transactionPointCut" expression="execution(* com.project.service..*.*(..))" />
+		<aop:advisor pointcut-ref="transactionPointCut"
+			advice-ref="txAdvice" />
+	</aop:config>
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="2000000000" />
+	</bean>
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass">
+			<value>org.springframework.web.servlet.view.JstlView</value>
+		</property>
+		<property name="prefix">
+			<value>/WEB-INF/views/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+
+	</bean>
+
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<bean
+					class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
+			</list>
+		</property>
+	</bean>
+	
+
+	
+
+		
+	<!-- 通过BeanFactoryAware，手动从spring容器获取bean--> 
+	<bean id="serviceLocator" class="com.project.util.ServiceLocator"></bean>
+	
+
+	<!-- 任务计划工厂类 ,必要配置-->
+	<!-- 后台订单定时作业  -->
+	<import resource="orderTrigger.xml" />
+	<import resource="spaceTrigger.xml" />
+	 
+	<mvc:interceptors>
+	    <mvc:interceptor>
+			<mvc:mapping path="/*" />
+			<bean class="com.project.interceptor.ClientInterceptor">
+				<property name="domain" value="http://localhost:8088/"></property>
+				<property name="resource_domain" value="http://localhost/"></property>
+			</bean>
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/admin/**" />
+			<bean class="com.project.interceptor.LoginInterceptor" />
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/admin/**" />
+			<bean class="com.project.interceptor.AuthInterceptor" />
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/mobile/**" />
+			<bean class="com.project.interceptor.WsLoginInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+</beans>

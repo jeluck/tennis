@@ -1,0 +1,84 @@
+/**
+ * @page 个人中心
+*/
+
+/* 用户信息列表 */
+.lz-user-list{ overflow: hidden; background: #fff;  }
+.lz-user-list+.lz-user-list{margin-top: 0.05rem;}
+.lz-user-list li{ overflow: hidden; position: relative; min-height: 0.3rem; line-height: 0.3rem; padding: 0.1rem 0.1rem 0.1rem 1.1rem; border-bottom: 0.01rem solid #E2E2E2;}
+.lz-user-list li .lz-left{ position: absolute; top: 50%; left: 0.1rem; z-index: 1; margin-top: -0.15rem; height: 0.3rem; line-height: 0.3rem; font-size: 0.14rem;}
+.lz-user-list li .lz-left .lz-checked-2{ margin-right: 0.05rem;}
+.lz-user-list li .lz-left em{  font-size: 0.12rem; font-style: normal; color: #ccc;}
+.lz-user-list li .lz-right { color: #555; }
+.lz-user-list li .lz-right .headimg{overflow: hidden; border-radius: 50%;}
+.lz-user-list li .lz-right .lz-icon-jiantouright{ padding-left: 0.05rem; color: #ddd;}
+.lz-user-list li .lz-right input{ width: auto; padding: 0.05rem; line-height: 0.20rem; border: 0.01rem solid transparent; border-radius: 0.05rem; text-align: right; color: #aaa;}
+.lz-user-list li .lz-right input:active,.lz-user-list li .lz-right input:hover,.lz-user-list li .lz-right input:focus{ border: 0.01rem solid #ddd;}
+.lz-user-list li.lz-indenting{ padding-right: 0; margin: 0 0.1rem;}
+.lz-user-list li.lz-indenting .lz-left{ left: 0;}
+
+.lz-level {overflow: scroll; display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 8999; background: #fff;}
+.lz-level .lz-list li{ padding: 0.1rem; line-height: 0.24rem; border-bottom: 0.01rem solid #F1F1F1;}
+.lz-level .lz-list li > *{ display: table-cell;}
+.lz-level .lz-list li i{  font-size: 0.3rem; color: #FE4919;}
+.lz-level .lz-list li strong { padding: 0 0.1rem; color: #444;}
+.lz-level .lz-list li span{ font-size: 0.13rem;}
+
+
+/* 教练类型 */
+#lz-coach-type .lz-right{ float: left;line-height: 0.24rem; }
+#lz-coach-type .lz-right em{ font-size: 0.12rem; font-weight: normal; font-style: normal; color: #ccc;}
+/* 添加执教经历 */
+.lz-addunit { padding: 0.1rem !important;}
+.lz-addunit>div{ position: relative; box-sizing: border-box; float: left; width: 25%; height: 0.3rem; line-height: 0.3rem;}
+.lz-addunit>div:first-of-type{ width: 40%;}
+.lz-addunit>div>input{ z-index: 2; display: block; width: 100%; height: 100%; line-height: 0.3rem;}
+.lz-addunit>div:first-of-type input{ padding-top: 0;}
+.lz-addunit>div>span{ position: absolute; top: -0.1rem; right: 0; left: 0; z-index: 1; display: block; text-align: center;}
+.lz-authentication .lz-table-cell{ width: 33.3%; text-align: right;}
+.lz-authentication .lz-table-cell span{ display: block; margin: 0.05rem; border: 0.01rem solid #ddd; border-radius: 0.05rem; text-align: center;}
+.lz-authentication .lz-table-cell span.lz-cur{ border: 0.01rem solid #EE4D3D; color: #EE4D3D;}
+
+/* 子分类 */
+.lz-child-type { overflow: hidden;}
+.lz-child-type .lz-value{ float: left; width: 33%;}
+.lz-child-type .lz-value em{ display: block; margin: 0.05rem; border: 0.01rem solid #ddd; border-radius: 0.05rem; text-align: center; font-size: 0.13rem; font-style: normal;}
+.lz-child-type .lz-cur em{ border: 0.01rem solid #ED4332; color: #ED4332;}
+
+/* 上面区域 */
+.lz-site-area { padding: 0; border-bottom: 0.01rem solid #ddd;}
+.lz-site-area li { padding: 0.05rem 0; border: none;}
+
+/* 网球级别选择 */
+.lz-level-list {
+    border-bottom: 1px solid #eee;
+}
+.lz-level-nav {
+    overflow: hidden;
+    display: block;
+    padding: 10px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #222;
+}
+.lz-level-nav .lz-iconfont {
+    float: right;
+}
+.lz-level-about {
+    display: none;
+    padding: 10px;
+    margin: 0 10px;
+    line-height: 24px;
+    border-top: 1px dashed #eee;
+}
+.lz-level-btn {
+    margin-top: 10px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    background: #ED4332;
+}
+.lz-level-about:target {
+    display: block;
+}

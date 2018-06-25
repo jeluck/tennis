@@ -1,0 +1,22 @@
+/* CSS Document */
+
+/* 说明 */
+.lz-explains { overflow: hidden; padding: 0.1rem; }
+.lz-explains .lz-l { text-align: right; }
+/* 预约说明 */
+.lz-info { height:0.26rem; padding: 0 0.1rem; margin-bottom:0.1rem; }
+.lz-info .lz-table-cell span { padding:0.05rem 0; margin-right: 0.05rem; text-align: center; background: #5999DA; }
+.lz-info .lz-no span { background: #ddd; }
+.lz-info .lz-yes span { background: #59DA6B; }
+.lz-info .lz-go span i { color:#fff;}
+.lz-info .lz-yes span i { color:#ddd; }
+/* 统计信息 */
+.lz-statistics{ text-align:center;}
+.lz-statistics .lz-table-cell{ padding:0.1rem;}
+/*#lz-hour-child-0>div,#lz-hour-child-1>div{ display: none;}*/
+/* 设置收费 */
+.lz-setcharge { background:#fff;}
+.lz-setcharge li{ overflow:hidden; height:0.28rem; padding:0.1rem 0; margin:0 0.1rem; border-bottom:0.01rem solid #ddd;}
+.lz-setcharge li.lz-tit{ padding:0.1rem; margin:0;}
+.lz-setcharge li:last-of-type{ border:none;}
+.lz-setcharge li .lz-right input{ width:0.6rem; height:0.28rem; line-height:0.28rem; border-bottom:1px solid #ddd; text-align:center;}

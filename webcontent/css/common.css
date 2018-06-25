@@ -1,0 +1,1069 @@
+/**
+ * @page 所有页面调用
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+html.lz-html {
+    font-size: 100px;
+    background: #EFEFEF;
+}
+
+
+/*html.lz-html,
+body.lz-body {overflow-y: scroll; width: 100%; height: 100%; }*/
+
+body.lz-body {
+    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #7F7F7F;
+}
+
+
+/*定义公共样式*/
+
+section,
+ul {
+    overflow: hidden;
+}
+
+.lz-iconfont {
+    font-size: 0.16rem;
+    -webkit-text-stroke-width: 0;
+}
+
+.lz-left {
+    float: left;
+}
+
+.lz-right {
+    float: right;
+}
+
+.lz-section {
+    padding: 0.1rem;
+    background: #fff;
+}
+
+.lz-mb {
+    margin-bottom: 0.1rem;
+}
+
+.lz-fixed {
+    position: fixed;
+    background: #fff;
+}
+
+.lz-table {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.lz-table-cell {
+    display: table-cell;
+}
+
+
+/*主题皮肤样式*/
+
+.lz-bg-ground {
+    background: #fff;
+}
+
+.lz-theme-bg {
+    background: #ED4332 !important;
+}
+
+.lz-theme-font-color {
+    color: #ED4332 !important;
+}
+
+.lz-theme2-font-color {
+    color: #3F84DB !important;
+}
+
+.lz-icon-nan {
+    color: #0C8AFF;
+}
+
+.lz-icon-nv {
+    color: #FF009F;
+}
+
+.lz-transparent {
+    color: transparent;
+}
+
+
+/*
+    flex布局 start
+*/
+
+
+/*
+    定义弹性布局：
+    主轴方向:从左到右，
+    主轴对齐方式：从左到右
+    交叉轴对齐方式：从上到下
+*/
+
+.flex {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex>* {
+    overflow: hidden;
+}
+
+
+/*
+    主轴方向：从左到右
+*/
+
+.flex,
+.flex.flex-left {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+
+/*
+    主轴方向：从右到左
+*/
+
+.flex.flex-right {
+    -webkit-box-pack: end;
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+
+/*
+    主轴方向：从上到下
+*/
+
+.flex.flex-top {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+
+/*
+    主轴方向：从下到上
+*/
+
+.flex.flex-bottom {
+    -webkit-box-pack: end;
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+
+/*
+    主轴对齐方式：两端对齐
+*/
+
+.flex.flex-main-justify {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+
+/*
+    主轴对齐方式：从左到右
+*/
+
+.flex,
+.flex.flex-main-left {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+
+/*
+    主轴对齐方式：从右到左
+*/
+
+.flex.flex-main-right {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+
+/*
+    主轴对齐方式：居中对齐
+*/
+
+.flex.flex-main-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+
+/*
+     ========交叉轴定义=====
+*/
+
+
+/*
+    交叉轴对齐方式：从上到下
+*/
+
+.flex,
+.flex.flex-cross-top {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+
+/*
+    交叉轴对齐方式：从下到上
+*/
+
+.flex.flex-cross-bottom {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+
+/*
+    交叉轴对齐方式：居中对齐
+*/
+
+.flex.flex-cross-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+/*
+    交叉轴对齐方式：跟随内容高度对齐
+*/
+
+.flex.flex-cross-baseline {
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    align-items: baseline;
+}
+
+
+/*
+    交叉轴对齐方式：高度并排铺满
+*/
+
+.flex.flex-cross-stretch {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+
+
+/*
+    默认，不允许子元素换行
+*/
+
+.flex,
+.flex.flex-nowrap {
+    -webkit-box-lines: single;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+
+/*
+    允许子元素换行
+*/
+
+.flex.flex-wrap {
+    -webkit-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/*
+    子元素属性：不伸缩
+*/
+
+.flex>*,
+.flex>.flex-box-0 {
+    -webkit-box-flex: 0.0;
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+
+
+/*
+    子元素属性：自动伸缩
+*/
+
+.flex>.flex-box-1 {
+    -webkit-box-flex: 1.0;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+}
+
+
+/*
+    flex布局 end
+*/
+
+
+/*头部公共样式*/
+
+.lz-header {
+    position: relative;
+    height: 0.5rem;
+}
+
+.lz-header>div {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 0.5rem;
+    height: 100%;
+    line-height: 0.5rem;
+    text-align: center;
+    color: #ddd;
+    font-size: 0.18rem;
+}
+
+.lz-header>.lz-header-left {
+    left: 0;
+}
+
+.lz-header>.lz-header-right {
+    right: 0;
+}
+
+.lz-header>h2 {
+    padding: 0 0.6rem;
+    line-height: 0.5rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.18rem;
+    font-weight: normal;
+}
+
+
+/*图片滑动布局1*/
+
+.lz-swiper-1 .swiper-slide>div {
+    height: 1.8rem;
+    background-size: 100% 100%;
+}
+
+.lz-swiper-1 .swiper-pagination>span {
+    border: 0.01rem solid #fff;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.lz-swiper-1 .swiper-pagination>span.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+
+/*标题*/
+
+.lz-tit-1 {
+    padding: 0 0.1rem;
+    line-height: 0.34rem;
+}
+
+.lz-tit-2 {
+    overflow: hidden;
+    position: relative;
+    padding: 0 0.1rem;
+    border-top: 0.01rem solid #EBEBEB;
+    line-height: 0.34rem;
+    font-size: 0.13rem;
+}
+
+.lz-tit-2>.lz-iconfont {
+    color: #FE4919;
+    padding-right: 0.1rem;
+}
+
+.lz-tit-2>span {
+    font-size: 0.13rem;
+    font-weight: normal;
+    color: #ccc;
+}
+
+.lz-tit-3 {
+    padding: 0.1rem 0.1rem 0.05rem 0.1rem;
+    margin-bottom: 0.05rem;
+    border-bottom: 0.01rem solid #eee;
+    box-shadow: 0 0 0.05rem #EBEBEB;
+    font-size: 0.16rem;
+    color: #444;
+    font-weight: normal;
+}
+
+.lz-tit-4 {
+    overflow: hidden;
+    padding: 0.1rem 0.1rem 0.05rem 0.1rem;
+    font-size: 0.13rem;
+    font-weight: normal;
+}
+
+.lz-tit-5 {
+    overflow: hidden;
+    padding: 0.14rem;
+    margin-bottom: 0.05rem;
+    font-weight: normal;
+    font-size: 0.16rem;
+    color: #444;
+    background: #fff;
+}
+
+.lz-tit-5 .lz-right {
+    font-size: 0.14rem;
+    color: #aaa;
+}
+
+.lz-tit-5 .lz-right i {
+    padding-left: 0.05rem;
+    color: #bbb;
+}
+
+
+/*列表*/
+
+.lz-lsit-1 {
+    min-height: 2.5rem;
+    border-top: 0.01rem solid #EBEBEB;
+}
+
+.lz-lsit-1 .lz-default {
+    position: relative;
+    padding: 0.1rem;
+    border-bottom: 0.01rem solid #EBEBEB;
+}
+
+.lz-lsit-1 .lz-default>div {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.lz-lsit-1 .lz-default .lz-headimg i {
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.1rem;
+    background-size: 100% 100%;
+}
+
+.lz-lsit-1 .lz-default .lz-content {
+    width: 100%;
+}
+
+.lz-lsit-1 .lz-default .lz-content>h4 {
+    overflow: hidden;
+    font-weight: normal;
+}
+
+.lz-lsit-1 .lz-default .lz-content>h4 .lz-name {
+    font-size: 0.15rem;
+    color: #333;
+}
+
+.lz-lsit-1 .lz-default .lz-content>h4 .lz-sex {
+    margin: 0 0.05rem;
+}
+
+.lz-lsit-1 .lz-default .lz-content>h4 time {
+    float: right;
+    font-size: 0.12rem;
+}
+
+.lz-list-2 {
+    background: #fff;
+}
+
+.lz-list-2 li {
+    overflow: hidden;
+    padding: 0.1rem 0;
+    margin: 0 0.1rem;
+    border-bottom: 0.01rem solid #eee;
+    line-height: 0.38rem;
+}
+
+.lz-list-2 li .lz-left {
+    overflow: hidden;
+    width: 90%;
+}
+
+.lz-list-2 li .lz-left i {
+    padding-right: 0.1rem;
+    vertical-align: middle;
+    font-size: 0.3rem;
+}
+
+.lz-list-2 li .lz-left .lz-tit {
+    font-size: 0.16rem;
+}
+
+.lz-list-2 li .lz-left .lz-info {
+    float: right;
+    padding-left: 0.1rem;
+    font-size: 0.12rem;
+}
+
+.lz-list-2 li .lz-right {
+    overflow: hidden;
+    width: 10%;
+    text-align: right;
+    font-size: 0.14rem;
+}
+
+.lz-list-2 li .lz-right .lz-icon-jiantouright {
+    color: #ddd;
+}
+
+.lz-list-3 {
+    overflow: hidden;
+    margin: 0.05rem 0;
+}
+
+.lz-list-3 li {
+    margin-bottom: 0.05rem;
+    background: #fff;
+}
+
+.lz-list-3 li .lz-top {
+    overflow: hidden;
+    padding: 0 0.1rem;
+    line-height: 0.38rem;
+}
+
+.lz-list-3 li .lz-top span {
+    color: #4186DC;
+}
+
+.lz-list-3 li .lz-center {
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    padding: 0.1rem;
+    background: #eee;
+}
+
+.lz-list-3 li .lz-center .lz-cell {
+    display: table-cell;
+}
+
+.lz-list-3 li .lz-center .lz-pic {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.lz-list-3 li .lz-tit {
+    padding: 0 0.1rem;
+    font-size: 0.16rem;
+    color: #555;
+}
+
+.lz-list-3 li .lz-tit .lz-time {
+    display: block;
+}
+
+.lz-list-3 li .lz-tit .lz-time i {
+    padding-right: 0.05rem;
+}
+
+.lz-list-3 li .lz-count {
+    padding-left: 0.1rem;
+    text-align: right;
+}
+
+.lz-list-3 li .lz-count strong {
+    color: #222;
+}
+
+.lz-list-3 li .lz-bottom {
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    padding: 0.2rem 0.1rem 0.1rem 0.1rem;
+    background: #fff;
+}
+
+.lz-list-3 li .lz-bottom .lz-cell {
+    display: table-cell;
+}
+
+.lz-list-3 li .lz-bottom .lz-l {
+    color: #444;
+}
+
+.lz-list-3 li .lz-bottom .lz-r {
+    width: 0.8rem;
+    border-radius: 0.05rem;
+    line-height: 0.38rem;
+    text-align: center;
+    color: #fff;
+    background: #ED4332;
+}
+
+.lz-list-4 {
+    overflow: hidden;
+}
+
+.lz-list-4 li {
+    padding: 0.1rem;
+    background: #fff;
+    border-bottom: 0.01rem solid #ccc;
+    line-height: 0.28rem;
+    font-size: 0.15rem;
+    color: #555;
+}
+
+.lz-list-4 li.lz-cur {
+    background: #ddd;
+}
+
+
+/*并排按钮*/
+
+.lz-abreast-btn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    border-top: 0.01rem solid #EBEBEB;
+    background: #fff;
+}
+
+.lz-abreast-btn>div {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    line-height: 0.38rem;
+    text-align: center;
+    border-right: 0.01rem solid #EBEBEB;
+}
+
+.lz-abreast-btn>div:last-of-type {
+    border: none;
+}
+
+
+/* 自定义选择按钮 */
+
+span.lz-checked-1 {
+    position: relative;
+    display: inline-block;
+    width: 0.16rem;
+    height: 0.16rem;
+    border: 0.01rem solid #666;
+    vertical-align: text-bottom;
+    border-radius: 0.02rem;
+}
+
+span.lz-checked-1 i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: left !important;
+    line-height: 0.16rem;
+    font-size: 0.16rem;
+}
+
+span.lz-checked-1 input {
+    display: none;
+}
+
+span.lz-checked-2 {
+    display: inline-block;
+    width: 0.16rem;
+    height: 0.16rem;
+    border: 0.01rem solid #ccc;
+    border-radius: 50%;
+    vertical-align: middle;
+    background: #fff;
+}
+
+span.lz-checked-2 input,
+span.lz-checked-2 i {
+    display: none;
+}
+
+span.lz-checked-2 i.lz-show {
+    display: block;
+    width: 0.1rem;
+    height: 0.1rem;
+    margin: 0.03rem;
+    border-radius: 50%;
+    background: #2E7AD9;
+}
+
+
+/*选项卡*/
+
+.lz-tab-nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    width: 100%;
+    background: #fff;
+}
+
+.lz-tab-nav li {
+    position: relative;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    width: 100%;
+    text-align: center;
+    line-height: 0.48rem;
+}
+
+.lz-tab-nav li.lz-on {
+    color: #ED4332;
+}
+
+.lz-tab-nav li.lz-on:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    border-bottom: 0.02rem solid #ED4332;
+}
+
+.lz-tab-box>div {
+    display: none;
+}
+
+
+/*加减*/
+
+.lz-operations {
+    overflow: hidden;
+    display: inline-block;
+    width: 0.25rem;
+    height: 0.25rem;
+    vertical-align: middle;
+    border: 0.01rem solid #ddd;
+    border-radius: 0.05rem;
+}
+
+.lz-operations>* {
+    float: left;
+    width: 0.25rem;
+    height: 0.25rem;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-align: center;
+    line-height: 0.25rem;
+}
+
+.lz-operations span {
+    background: #ccc;
+}
+
+.lz-operations input {
+    background: #fff;
+    color: #ccc;
+}
+
+
+/* 评论框 */
+
+.lz-fixed-re {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 5px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
+
+.lz-fixed-re textarea {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    min-height: inherit;
+    padding: 0 55px 0 0;
+    line-height: 28px;
+    border-bottom: 1px solid #44C0AA;
+    background: #fff;
+}
+
+.lz-fixed-re button {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 50px;
+    height: 30px;
+    padding-left: 5px;
+    background: #fff;
+}
+
+.lz-fixed-re button span {
+    display: block;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/* 开关按钮 */
+
+.lz-switch {
+    overflow: hidden;
+    display: block;
+    width: 0.6rem;
+    height: 0.26rem;
+    padding: 0.02rem;
+    border-radius: 0.05rem;
+    background: #1AC522;
+}
+
+.lz-switch i {
+    display: block;
+    float: right;
+    width: 0.35rem;
+    height: inherit;
+    border-radius: 0.05rem;
+    background: #fff;
+}
+
+.lz-switch.no {
+    background: #B3B3B3;
+}
+
+.lz-switch.no i {
+    float: left;
+}
+
+
+/* 罩层 */
+
+#overlays {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    background: rgba(171, 171, 171, 0.22);
+}
+
+#overlays.lz-show {
+    display: block;
+}
+
+#overlays.lz-hide {
+    display: none;
+}
+
+
+/* ajax分页 */
+
+.get-next {
+    line-height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background: #fff;
+}
+
+
+/* 加载动画 */
+
+.ball-beat {
+    padding: 1rem;
+    margin-left: -0.5rem;
+    text-align: center;
+}
+
+.ball-beat > div {
+    background-color: #FF3A26;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 2px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    display: inline-block;
+    -webkit-animation: ball-beat 0.7s 0s infinite linear;
+    animation: ball-beat 0.7s 0s infinite linear;
+}
+
+.ball-beat > div:nth-child(2n-1) {
+    -webkit-animation-delay: 0.35s !important;
+    animation-delay: 0.35s !important;
+}
+
+@-webkit-keyframes ball-beat {
+    50% {
+        opacity: 0.2;
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes ball-beat {
+    50% {
+        opacity: 0.2;
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+/* 警告提示 */
+
+.lz-errer {
+    padding: 1rem 0;
+    margin-left: -0.5rem;
+    text-align: center;
+    color: #ccc;
+}
+
+.lz-errer .lz-iconfont {
+    font-size: 0.8rem;
+    line-height: 0.15rem;
+}
+
+.lz-errer h4 {
+    font-weight: normal;
+    line-height: 0.38rem;
+}
+
+.lz-errer .lz-btn {
+    width: 0.8rem;
+    margin: 0 auto;
+    line-height: 0.34rem;
+    border: 0.01rem solid #ddd;
+    border-radius: 0.05rem;
+}
+
+
+/* 支付成功页面 */
+
+.lz-pay-box {
+    padding: 0.5rem;
+    text-align: center;
+    background: #fff;
+}
+
+.lz-pay-box .lz-iconfont {
+    font-size: 0.5rem;
+}
+
+.lz-pay-content {
+    font-size: 0.16rem;
+    line-height: 0.28rem;
+}
+
+.lz-pay-btn {
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    padding: 0 0 0.5rem 0;
+    background: #fff;
+}
+
+.lz-pay-cell {
+    display: table-cell;
+}
+
+.lz-pay-a {
+    display: block;
+    width: 1rem;
+    margin: 0 auto;
+    line-height: 0.38rem;
+    text-align: center;
+    color: #555;
+    border: 0.01rem solid #ccc;
+    border-radius: 0.08rem;
+    background: #eaeaea;
+}
+
+
+/* 
+    网球圈列表
+*/
+
+.group-ul {
+    overflow: hidden;
+}
+
+.group-img {
+    width: 100%;
+}
+
+.group-li {
+    margin-bottom: 0.2rem;
+    background: #fff;
+    box-shadow: 0 0 0.05rem #BBBBBB;
+}
+
+.group-about {
+    padding: 0.05rem 0.1rem;
+    font-size: 0.14rem;
+    line-height: 0.24rem;
+}

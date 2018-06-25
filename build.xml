@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="fenxiao" basedir="." default="publish">
+
+	<target name="init">
+
+		<!-- war包名称 -->
+		<property name="warFile" value="ROOT.war" />
+		<property name="Name" value="emsyly" />
+		<property name="debug" value="off" />
+		<property name="optimize" value="on" />
+		<property name="deprecation" value="on" />
+
+		<!-- SVN信息 -->
+		<property name="svn.url" value="svn://172.20.0.111/emsyly" />
+		<property name="svn.username" value="linwenfu" />
+		<property name="svn.password" value="linwenfu_yougou" />
+
+		<!--   发布路径       -->
+		<property name="publish.dir" value="${basedir}/publish" />
+
+		<!--   java源文件路径 -->
+		<property name="src.dir" value="${basedir}/src" />
+
+		<!--   jar包路径 -->
+		<property name="lib.dir" value="${basedir}/webcontent/WEB-INF/lib" />
+
+		<!--   webapp路径 -->
+		<property name="webapp.dir" value="${basedir}/webcontent" />
+		<property name="packages" value="com.*" />
+
+		<!--   准备源文件路径 -->
+		<property name="build.src" value="${basedir}/target/build" />
+
+		<!--   编译源文件路径 -->
+		<property name="build.dest" value="${basedir}/target/bin" />
+
+		<!--   准备webapp文件路径 -->
+		<property name="buildwar.dest" value="${basedir}/target/warsrc" />
+
+		<!--   准备javadoc文件路径 -->
+		<property name="build.javadocs" value="${basedir}/target/doc" />
+
+		<!--   打包jar文件路径 -->
+		<property name="jar.dest" value="${basedir}/target/jar" />
+
+		<!--   打包war文件路径 -->
+		<property name="war.dest" value="${basedir}/target/war" />
+
+		<property name="j2eelib.dir" value="${basedir}/j2eelib" />
+
+		<!--   classpath -->
+		<path id="classpath">
+
+			<fileset dir="${j2eelib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+			<!--<pathelement location="lib/"/>-->
+		</path>
+
+		<filter token="date" value="${TODAY}" />
+		<filter token="log" value="true" />
+		<filter token="verbose" value="true" />
+
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- Help on usage -->
+	<!-- =================================================================== -->
+	<target name="usage" depends="init">
+		<echo message="${Name} Build file" />
+		<echo message="-------------------------------------------------------------" />
+		<echo message="" />
+		<echo message=" available targets are:" />
+		<echo message="" />
+		<echo message=" build --> compiles the source code" />
+		<echo message=" javadoc --> generates the API documentation" />
+		<echo message=" clean --> cleans up the directory" />
+		<echo message="" />
+		<echo message=" Please rename build.properties.default to build.properties" />
+		<echo message=" and edit build.properties to specify JSDK 2.3 classpath." />
+		<echo message="" />
+		<echo message=" See the comments inside the build.xml file for more details." />
+		<echo message="-------------------------------------------------------------" />
+		<echo message="" />
+		<echo message="" />
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- 准备源文件-->
+	<!-- =================================================================== -->
+	<target name="prepare-src" depends="init">
+		<!-- create directories -->
+		<mkdir dir="${build.src}" />
+		<mkdir dir="${build.dest}" />
+		<mkdir dir="${jar.dest}" />
+		<mkdir dir="${war.dest}" />
+		<mkdir dir="${buildwar.dest}" />
+
+
+		<!-- copy src files -->
+		<copy todir="${build.src}">
+			<fileset dir="${src.dir}" />
+		</copy>
+		<copy todir="${buildwar.dest}">
+			<fileset dir="${webapp.dir}" />
+		</copy>
+
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- 编译源文件-->
+	<!-- =================================================================== -->
+	<target name="build" depends="update,prepare-src">
+		<javac srcdir="${build.src}" includeJavaRuntime="yes" includeantruntime="yes" encoding="UTF-8" nowarn="true" destdir="${buildwar.dest}/WEB-INF/classes" debug="${debug}" optimize="${optimize}">
+			<classpath refid="classpath" />
+		</javac>
+		<copy todir="${buildwar.dest}/WEB-INF/classes">
+			<fileset dir="${build.src}">
+				<include name="**/*.xml" />
+				<include name="**/*.properties" />
+			</fileset>
+		</copy>
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- 打包(非调度) --> 
+	<!-- =================================================================== -->
+	<target name="war_non_scheduler" depends="init">
+		<copy todir="${basedir}/xml">
+			<fileset dir="${build.src}">
+				<include name="**/scheduler.xml" />
+			</fileset>
+		</copy>
+		<java jar="${lib.dir}/xfp.jar" fork="true" failonerror="true" maxmemory="128m">
+			<arg value="${basedir}/xml" />
+			<classpath>
+				<pathelement location="xfp.jar" />
+				<pathelement location="${lib.dir}/xfp.jar" />
+				<pathelement path="${lib.dir}" />
+			</classpath>
+			<classpath refid="classpath" />
+		</java>
+		<copy todir="${buildwar.dest}/WEB-INF/classes">
+			<fileset dir="${basedir}/xml">
+				<include name="**/scheduler.xml" />
+			</fileset>
+		</copy>
+		<war warfile="${war.dest}/NON_SCHEDULER_${warFile}" webxml="${buildwar.dest}/WEB-INF/web.xml">
+			<fileset dir="${buildwar.dest}">
+			</fileset>
+		</war>
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- 打war包-->
+	<!-- =================================================================== -->
+
+	<target name="war" depends="build">
+		<war warfile="${war.dest}/${warFile}" webxml="${buildwar.dest}/WEB-INF/web.xml">
+			<fileset dir="${buildwar.dest}">
+			</fileset>
+		</war>
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- 发布-->
+	<!-- =================================================================== -->
+	<target name="publish" depends="clean,war,war_non_scheduler">
+		<copy todir="${publish.dir}/">
+			<fileset dir="${war.dest}">
+				<include name="**/*.war" />
+			</fileset>
+		</copy>
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- 产生javadoc api 文档-->
+	<!-- =================================================================== -->
+	<target name="javadoc" depends="build">
+		<mkdir dir="${build.javadocs}" />
+		<javadoc packagenames="${packages}" sourcepath="${build.src}" destdir="${build.javadocs}" author="true" version="true" use="true" splitindex="true" windowtitle="${Name} API" doctitle="${Name}">
+			<classpath refid="classpath" />
+		</javadoc>
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- 清除临时文件--> 
+	<!-- =================================================================== -->
+	<target name="clean" depends="init">
+		<delete dir="${build.src}" />
+		<delete dir="${build.dest}/org" />
+		<delete dir="${build.dest}/com" />
+		<delete dir="${buildwar.dest}" />
+		<delete>
+			<fileset dir="${build.dest}" includes="**/*.class" />
+		</delete>
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- 从SVN更新代码 -->
+	<!-- =================================================================== -->
+	<target name="update" depends="init">
+		<typedef resource="org/tigris/subversion/svnant/svnantlib.xml">
+			<classpath>
+				<pathelement location="svnant.jar" />
+			</classpath>
+			<classpath refid="classpath" />
+		</typedef>
+		<svn username="${svn.username}" password="${svn.password}" javahl="true">
+			<checkout url="${svn.url}" revision="HEAD" destPath="." />
+		</svn>
+	</target>
+</project>

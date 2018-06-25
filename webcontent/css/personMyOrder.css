@@ -1,0 +1,181 @@
+/* ************/
+/* 个人中心所有样式 */
+/* ************ */
+/* 我的订单-personMyOrder样式 */
+
+#tab li.current {
+    color:#22891F;
+    border-bottom: 2px solid #22891F;
+    padding-bottom: 6px;
+}
+#content ul {
+    display:none;
+}ul#tab {
+    background-color: #fff;
+    padding-left: 4%;
+    height: 40px;
+    width: 96%;
+    padding-top: 10px;
+}
+
+#tab li {
+    display: inline-table;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+a.orderStatus {
+    color: #ef383b;
+    font-size: 14px;
+    position: absolute;
+    right: 20px;
+}
+.orderPay-Close {
+    border-top: 1px solid #DEDEDE;
+    padding-top: 10px;
+  /*  margin-top: 15px;*/
+    position: relative;
+    height: 24px;
+}
+input.orderPay {
+    position: absolute;
+    right: 35%;
+    color: #FFF;
+    background-color: #22891F;
+    border-width: 0;
+    height: 25px;
+    width: 30%;
+    font-size: 16px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    top: 5px;
+}
+input.close {
+    position: absolute;
+    right: 0px;
+    height: 25px;
+    top: 5px;
+    width: 30%;
+    font-size: 16px;
+    border-radius: 5px;
+    border-width: 0;
+    color: #555;
+    border: 1px solid #999;
+    -webkit-appearance: none;
+}
+
+/* 用户信息样式 */
+.user {
+    text-align: center;
+    background-color: #22891F;
+    padding-top: 30px;
+}
+a.userName {
+    color: #fff;
+}
+a.userFrom {
+    color: #FFA7A8;
+}
+/* 修改用户昵称 */
+.nameNoBorder {
+    border: none;
+    width: 93%;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 5%;
+    margin: 10px auto;
+}
+.nameWarning {
+    line-height: 20px;
+    padding: 5%;
+    color: #ADADAD;
+}
+/* 手机绑定 */
+.sendTelVerif {
+    color: white;
+    float: right;
+    position: absolute;
+    top: 5px;
+    right: 8%;
+    background-color: #1C81FF;
+    width: 40%;
+    height: 40px;
+    border: none;
+    -webkit-appearance: none;
+}
+/* 客户端我的订单信息 myself */
+li.waitCom {
+    width:20%;
+    float: left;
+    padding-left:5%;
+    background: #fff;
+    margin-bottom: -18px;
+    padding-bottom: 5px;
+    position: relative;
+    color: #595959;
+}
+
+em.lookAllOrder {
+    width: 30%;
+    position: absolute;
+    right: 28px;
+    color: #595959;
+    margin-top: -40px;
+    font-size: 13px;
+}
+.waitPay,.waitSend,.waitRec,.waitAdvice {
+    background: url("../images/total.png");
+    background-size: 650px;
+    /* background-position: -14px -90%; */
+    height: 42px;
+    width: 50px;
+    margin-left: -5px;
+    display: block;
+    margin-bottom: -38px;
+    margin-top: 8px;
+}
+.waitPay {
+    background-position:-10px -77%;;
+  /*  width: 33px;*/
+}
+.waitSend {
+    background-position: -60px -77%;
+}
+.waitRec {
+    background-position:-100px -77%;
+}
+.waitAdvice {
+    background-position:-150px -77%;
+}
+/* 红圈+数字 */
+span.redRound-img {
+    background: url("../images/total.png");
+    background-size: 600px;
+    background-position: -318px -221%;
+    height: 37px;
+    width: 30px;
+    margin-left: 28px;
+    display: block;
+    position: absolute;
+    top:-8px;
+    text-align: center;
+}
+a.redRound-num {
+    position: relative;
+    top: 10px;
+    color: #fff;
+    margin-right: 8px;
+}
+
+/***添加地址按钮样式***/
+input.addressButton {
+width: 88%;
+margin-left: 5%;
+background-color: #0D89FD;
+height: 40px;
+border-width: 0;
+color: #fff;
+font-size: 18px;
+border-radius: 3px;
+-webkit-appearance: none;
+}

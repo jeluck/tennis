@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 2015-11-17, 10:47:32
+    Author     : 狼族小狈
+*/
+
+.choicecity { position: fixed; top: 0; right: 0;bottom: 0; left: 0; z-index: 9999; overflow-y: scroll; background: #eee;}
+.choicecity-hide{ display:none;}
+.choicecity .choicecity-box > [data-status="cur"] h4{ color: white;background-color: #ED4332;}
+.choicecity .choicecity-child-box > [data-status="cur"]{ color: white;background-color: #ED4332;}
+.choicecity-header{ display: none; position: relative; height: 45px; background: #eee;}
+.choicecity-header h3{ text-align: center; line-height: 45px; font-size: 16px; font-weight: normal;}
+.choicecity-header .back{ position: absolute; top:15px; left:15px; display:block; width:14px; height:14px; border-bottom:1px solid #ccc; border-left:1px solid #ccc; -webkit-transform:rotate(45deg); transform:rotate(45deg); }
+.choicecity-box{  overflow: hidden;}
+.choicecity-box > li { overflow: hidden; margin-bottom: 0; background: #fff;}
+.choicecity-box > li.choicecity-child-show { height: 100%; margin-bottom: 20px;}
+.choicecity-box > li.choicecity-child-hide{ height: 49px;}
+.choicecity-box > li > h4{ padding: 0 10px; line-height: 48px; font-size:16px; font-weight: normal; color: #333; border-bottom:1px solid #ddd;}
+.choicecity-box > li > h4{ position: relative; }
+.choicecity-box > li > h4 > i{ position: absolute; display:block; top:18px; right:10px; width:10px; height:10px; border-right:2px solid #ccc; border-bottom:2px solid #ccc; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
+.choicecity-box > li.choicecity-child-show > h4 > i{ top:22px; -webkit-transform:rotate(225deg); transform:rotate(225deg);}
+.choicecity-child-box { padding-left: 40px;}
+.choicecity-child-box li{overflow: hidden; position:relative; line-height: 38px; border-bottom:1px solid #eee; }
+.choicecity-child-box li.hide {
+    height: 38px;
+}
+.choicecity-child-box li:after{ xcontent:""; position: absolute; top: 14px; right: 20px; width:10px; height:10px; border-top:1px solid #eee; border-right:1px solid #eee; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
+.choicecity-child-box li:last-of-type{ border-bottom:none;}
+.choicecity-child-area {
+    margin-left: 20px;
+    border-top: 1px solid #eee;
+}
