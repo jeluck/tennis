@@ -1,124 +1,112 @@
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.CacheManager.parseConfiguration(CacheManager.java:554) - Configuring ehcache from classpath.
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:130) - Configuring ehcache from ehcache.xml found in the classpath: file:/D:/tennis/out/artifacts/tennis_war_exploded/WEB-INF/classes/ehcache.xml
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:96) - Configuring ehcache from URL: file:/D:/tennis/out/artifacts/tennis_war_exploded/WEB-INF/classes/ehcache.xml
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:148) - Configuring ehcache from InputStream
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.DiskStoreConfiguration.translatePath(DiskStoreConfiguration.java:118) - Disk Store Path: D:\softwarePath\apache-tomcat-7.0.73\temp
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.util.PropertyUtil.parseProperties(PropertyUtil.java:88) - propertiesString is null.
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createCacheManagerEventListener(ConfigurationHelper.java:184) - No CacheManagerEventListenerFactory class specified. Skipping...
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:949) - No BootstrapCacheLoaderFactory class specified. Skipping...
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.createCacheWriter(Cache.java:923) - CacheWriter factory not configured. Skipping...
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:949) - No BootstrapCacheLoaderFactory class specified. Skipping...
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.createCacheWriter(Cache.java:923) - CacheWriter factory not configured. Skipping...
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.store.compound.factories.DiskPersistentStorageFactory.<init>(DiskPersistentStorageFactory.java:96) - Matching data file missing (or empty) for index file. Deleting index file D:\softwarePath\apache-tomcat-7.0.73\temp\myCache.index
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.initialise(Cache.java:1183) - Initialised cache: myCache
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:331) - CacheDecoratorFactory not configured. Skipping for 'myCache'.
-2018-05-04 00:39:08 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:360) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myCache'.
-2018-05-04 00:39:09 [net.sf.ehcache.CacheManager@5d7bfb65] DEBUG net.sf.ehcache.util.UpdateChecker.doCheck(UpdateChecker.java:68) - Checking for update...
-2018-05-04 00:39:10 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.initialise(Cache.java:1183) - Initialised cache: org.hibernate.cache.UpdateTimestampsCache
-2018-05-04 00:39:10 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:360) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'org.hibernate.cache.UpdateTimestampsCache'.
-2018-05-04 00:39:10 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.initialise(Cache.java:1183) - Initialised cache: org.hibernate.cache.StandardQueryCache
-2018-05-04 00:39:10 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:360) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'org.hibernate.cache.StandardQueryCache'.
-2018-05-04 00:39:10 [net.sf.ehcache.CacheManager@5d7bfb65] DEBUG net.sf.ehcache.util.UpdateChecker.checkForUpdate(UpdateChecker.java:63) - Update check failed: java.io.IOException: Server returned HTTP response code: 403 for URL: http://www.terracotta.org/kit/reflector?kitID=ehcache.default&pageID=update.properties&id=-1062731518&os-name=Windows+10&jvm-name=Java+HotSpot%28TM%29+64-Bit+Server+VM&jvm-version=1.8.0_161&platform=amd64&tc-version=UNKNOWN&tc-product=Ehcache+Core+2.4.5&source=Ehcache+Core&uptime-secs=1&patch=UNKNOWN
-2018-05-04 00:39:13 [RMI TCP Connection(5)-127.0.0.1] INFO com.project.listener.StartAddDataListener.onApplicationEvent(StartAddDataListener.java:56) - 主订单:....null
-2018-05-04 00:46:59 [http-apr-8088-exec-9] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.CacheManager.parseConfiguration(CacheManager.java:554) - Configuring ehcache from classpath.
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:130) - Configuring ehcache from ehcache.xml found in the classpath: file:/D:/tennis/out/artifacts/tennis_war_exploded/WEB-INF/classes/ehcache.xml
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:96) - Configuring ehcache from URL: file:/D:/tennis/out/artifacts/tennis_war_exploded/WEB-INF/classes/ehcache.xml
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:148) - Configuring ehcache from InputStream
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.DiskStoreConfiguration.translatePath(DiskStoreConfiguration.java:118) - Disk Store Path: D:\softwarePath\apache-tomcat-7.0.73\temp
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.util.PropertyUtil.parseProperties(PropertyUtil.java:88) - propertiesString is null.
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createCacheManagerEventListener(ConfigurationHelper.java:184) - No CacheManagerEventListenerFactory class specified. Skipping...
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:949) - No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.createCacheWriter(Cache.java:923) - CacheWriter factory not configured. Skipping...
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:949) - No BootstrapCacheLoaderFactory class specified. Skipping...
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.createCacheWriter(Cache.java:923) - CacheWriter factory not configured. Skipping...
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.store.compound.factories.DiskPersistentStorageFactory.<init>(DiskPersistentStorageFactory.java:96) - Matching data file missing (or empty) for index file. Deleting index file D:\softwarePath\apache-tomcat-7.0.73\temp\myCache.index
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.initialise(Cache.java:1183) - Initialised cache: myCache
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:331) - CacheDecoratorFactory not configured. Skipping for 'myCache'.
+2018-06-25 22:13:56 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:360) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'myCache'.
+2018-06-25 22:13:57 [net.sf.ehcache.CacheManager@9fc4bcb] DEBUG net.sf.ehcache.util.UpdateChecker.doCheck(UpdateChecker.java:68) - Checking for update...
+2018-06-25 22:13:57 [net.sf.ehcache.CacheManager@9fc4bcb] DEBUG net.sf.ehcache.util.UpdateChecker.checkForUpdate(UpdateChecker.java:63) - Update check failed: java.io.IOException: Server returned HTTP response code: 403 for URL: http://www.terracotta.org/kit/reflector?kitID=ehcache.default&pageID=update.properties&id=-1062731514&os-name=Windows+10&jvm-name=Java+HotSpot%28TM%29+64-Bit+Server+VM&jvm-version=1.8.0_161&platform=amd64&tc-version=UNKNOWN&tc-product=Ehcache+Core+2.4.5&source=Ehcache+Core&uptime-secs=1&patch=UNKNOWN
+2018-06-25 22:13:59 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.initialise(Cache.java:1183) - Initialised cache: org.hibernate.cache.UpdateTimestampsCache
+2018-06-25 22:13:59 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:360) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'org.hibernate.cache.UpdateTimestampsCache'.
+2018-06-25 22:13:59 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.Cache.initialise(Cache.java:1183) - Initialised cache: org.hibernate.cache.StandardQueryCache
+2018-06-25 22:13:59 [RMI TCP Connection(5)-127.0.0.1] DEBUG net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:360) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'org.hibernate.cache.StandardQueryCache'.
+2018-06-25 22:14:04 [RMI TCP Connection(5)-127.0.0.1] INFO com.project.listener.StartAddDataListener.onApplicationEvent(StartAddDataListener.java:56) - 主订单:....null
+2018-06-25 22:14:23 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
 -------------------------------------------------------------------------------
-2018-05-04 00:46:59 [http-apr-8088-exec-9] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/index.do
-2018-05-04 00:46:59 [http-apr-8088-exec-9] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:46:59 [http-apr-8088-exec-9] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
+2018-06-25 22:14:23 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/index.do
+2018-06-25 22:14:23 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
+2018-06-25 22:14:23 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
 
-2018-05-04 00:46:59 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
+2018-06-25 22:14:23 [http-apr-8088-exec-9] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
 -------------------------------------------------------------------------------
-2018-05-04 00:46:59 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/login.do
-2018-05-04 00:46:59 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:46:59 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
+2018-06-25 22:14:23 [http-apr-8088-exec-9] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/login.do
+2018-06-25 22:14:23 [http-apr-8088-exec-9] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
+2018-06-25 22:14:23 [http-apr-8088-exec-9] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
 
-2018-05-04 00:46:59 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
+2018-06-25 22:14:24 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
 -------------------------------------------------------------------------------
-2018-05-04 00:46:59 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/valicode.do
-2018-05-04 00:46:59 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:46:59 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - action=valicode
-2018-05-04 00:46:59 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
+2018-06-25 22:14:24 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/valicode.do
+2018-06-25 22:14:24 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
+2018-06-25 22:14:24 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - action=valicode
+2018-06-25 22:14:24 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
 
-2018-05-04 00:50:18 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
+2018-06-25 22:17:02 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
 -------------------------------------------------------------------------------
-2018-05-04 00:50:18 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/valicode.do
-2018-05-04 00:50:18 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:50:18 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - action=valicode
-2018-05-04 00:50:18 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:778) -  | d=1525366218441
-2018-05-04 00:50:18 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
+2018-06-25 22:17:02 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/index.do
+2018-06-25 22:17:02 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
+2018-06-25 22:17:02 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
 
-2018-05-04 00:50:18 [http-apr-8088-exec-3] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
+2018-06-25 22:17:02 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
 -------------------------------------------------------------------------------
-2018-05-04 00:50:18 [http-apr-8088-exec-3] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/valicode.do
-2018-05-04 00:50:18 [http-apr-8088-exec-3] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:50:18 [http-apr-8088-exec-3] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - action=valicode
-2018-05-04 00:50:18 [http-apr-8088-exec-3] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:778) -  | d=1525366218909
-2018-05-04 00:50:18 [http-apr-8088-exec-3] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
+2018-06-25 22:17:02 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/login.do
+2018-06-25 22:17:02 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
+2018-06-25 22:17:02 [http-apr-8088-exec-8] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
 
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
+2018-06-25 22:17:02 [http-apr-8088-exec-2] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
 -------------------------------------------------------------------------------
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/managelogin.do
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - usercode=admin
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:778) -  | password=123456
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:778) -  | valicode=6u9i
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
+2018-06-25 22:17:02 [http-apr-8088-exec-2] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/valicode.do
+2018-06-25 22:17:02 [http-apr-8088-exec-2] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
+2018-06-25 22:17:02 [http-apr-8088-exec-2] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - action=valicode
+2018-06-25 22:17:02 [http-apr-8088-exec-2] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
 
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.controller.admin.AdminController.managerLogin(AdminController.java:99) - 收到登录请求：username：admin-- password:123456
-2018-05-04 00:50:24 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
+2018-06-25 22:17:15 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
 -------------------------------------------------------------------------------
-2018-05-04 00:50:24 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/login.do
-2018-05-04 00:50:24 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:50:24 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
+2018-06-25 22:17:15 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/managelogin.do
+2018-06-25 22:17:15 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
+2018-06-25 22:17:15 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - usercode=admin
+2018-06-25 22:17:15 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:778) -  | password=123456
+2018-06-25 22:17:15 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:778) -  | valicode=njo0
+2018-06-25 22:17:15 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
 
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
+2018-06-25 22:17:15 [http-apr-8088-exec-1] INFO com.project.controller.admin.AdminController.managerLogin(AdminController.java:99) - 收到登录请求：username：admin-- password:123456
+2018-06-25 22:17:15 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
 -------------------------------------------------------------------------------
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/valicode.do
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - action=valicode
-2018-05-04 00:50:24 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
+2018-06-25 22:17:15 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/login.do
+2018-06-25 22:17:15 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
+2018-06-25 22:17:15 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
 
-2018-05-04 00:50:46 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
+2018-06-25 22:17:15 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
 -------------------------------------------------------------------------------
-2018-05-04 00:50:46 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/managelogin.do
-2018-05-04 00:50:46 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:50:46 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - usercode=admin
-2018-05-04 00:50:46 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:778) -  | password=123444
-2018-05-04 00:50:46 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:778) -  | valicode=9319
-2018-05-04 00:50:46 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
+2018-06-25 22:17:15 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/valicode.do
+2018-06-25 22:17:15 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
+2018-06-25 22:17:15 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - action=valicode
+2018-06-25 22:17:15 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
 
-2018-05-04 00:50:46 [http-apr-8088-exec-4] INFO com.project.controller.admin.AdminController.managerLogin(AdminController.java:99) - 收到登录请求：username：admin-- password:123444
-2018-05-04 00:50:46 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
+2018-06-25 22:17:23 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
 -------------------------------------------------------------------------------
-2018-05-04 00:50:46 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/login.do
-2018-05-04 00:50:46 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:50:46 [http-apr-8088-exec-6] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
+2018-06-25 22:17:23 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/managelogin.do
+2018-06-25 22:17:23 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
+2018-06-25 22:17:23 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - usercode=admin
+2018-06-25 22:17:23 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:778) -  | password=123456
+2018-06-25 22:17:23 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:778) -  | valicode=hrrb
+2018-06-25 22:17:23 [http-apr-8088-exec-4] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
 
-2018-05-04 00:50:46 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
+2018-06-25 22:17:23 [http-apr-8088-exec-4] INFO com.project.controller.admin.AdminController.managerLogin(AdminController.java:99) - 收到登录请求：username：admin-- password:123456
+2018-06-25 22:17:23 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
 -------------------------------------------------------------------------------
-2018-05-04 00:50:46 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/valicode.do
-2018-05-04 00:50:46 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:50:46 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - action=valicode
-2018-05-04 00:50:46 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
+2018-06-25 22:17:23 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/login.do
+2018-06-25 22:17:23 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
+2018-06-25 22:17:23 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
 
-2018-05-04 00:51:03 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
+2018-06-25 22:17:24 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
 -------------------------------------------------------------------------------
-2018-05-04 00:51:03 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/index.do
-2018-05-04 00:51:03 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:51:03 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
+2018-06-25 22:17:24 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/valicode.do
+2018-06-25 22:17:24 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
+2018-06-25 22:17:24 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - action=valicode
+2018-06-25 22:17:24 [http-apr-8088-exec-1] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
 
-2018-05-04 00:51:03 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
--------------------------------------------------------------------------------
-2018-05-04 00:51:03 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/login.do
-2018-05-04 00:51:03 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:51:03 [http-apr-8088-exec-7] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
-
-2018-05-04 00:51:03 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:769) - 
--------------------------------------------------------------------------------
-2018-05-04 00:51:03 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:770) - 请求路径：http://localhost:8088/admin/valicode.do
-2018-05-04 00:51:03 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:772) - 请求参数：[ 
-2018-05-04 00:51:03 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:776) - action=valicode
-2018-05-04 00:51:03 [http-apr-8088-exec-10] INFO com.project.util.CommonUtil.printHTTP(CommonUtil.java:781) -   ]
-
+2018-06-25 23:00:00 [pool-2-thread-1] INFO com.project.task.SpaceCancelTask.saveTime(SpaceCancelTask.java:41) - 生成场地时间....    ==========    
+2018-06-25 23:00:00 [pool-1-thread-1] INFO com.project.task.OrderTask.execute(OrderTask.java:50) - 已支付的订单的改成进行中状态....
+2018-06-25 23:00:00 [pool-1-thread-1] INFO com.project.task.OrderTask.executeing(OrderTask.java:117) - 将执行中的订单状态改成已完成....
+2018-06-25 23:00:16 [pool-2-thread-1] INFO com.project.task.SpaceCancelTask.saveTime(SpaceCancelTask.java:152) - 生成场地时间...    ==========    16秒
